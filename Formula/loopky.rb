@@ -17,13 +17,13 @@
 class Loopky < Formula
   desc "Headless Loopky client — create and manage Pubky flashcard decks from a terminal"
   homepage "https://github.com/jvsena42/loopky"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/jvsena42/loopky/releases/download/v#{version}/loopky-macos-aarch64"
-      sha256 "8fc8428bd2b49d4cb97af81ae6e8d8b5d37c7f6a400fa160f552ff9cf0ccbd6e"
+      sha256 "de4ec2129568cff04025a36d1cd515a4ba905dcb26d618cc370b40bf45355281"
     end
     on_intel do
       odie "loopky ships one macOS build and it is for Apple Silicon. See cli/README.md."
@@ -33,7 +33,7 @@ class Loopky < Formula
   on_linux do
     on_intel do
       url "https://github.com/jvsena42/loopky/releases/download/v#{version}/loopky-linux-x86-64"
-      sha256 "b9cdff085d7f2794628ac8aaeea8b3dc1ea7fa49848c694453e2f07a27230fd6"
+      sha256 "8a0470d13327f09e95304a5d0d814427fc171e1d17e56d547ac2be5f5d55f6e9"
     end
     # Spelled out for the same reason as the Intel-Mac branch. Left off the end, this arch gets a
     # formula error about a missing `url` — Homebrew's words about our file, rather than ours
